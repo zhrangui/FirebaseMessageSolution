@@ -4,8 +4,13 @@ import config from './firebase.config';
 declare var window: any;
 
 export default class Notification {
-  private app: any;
+  private messaging: firebase.messaging.Messaging;
   constructor() {
-    this.app = firebase.initializeApp(config);
+    window.FirebasePlugin.getToken((token) => {
+      // save this server-side and use it to push notifications to this device
+      console.log(token);
+    }, function (error) {
+      console.error(error);
+    });
   }
 }

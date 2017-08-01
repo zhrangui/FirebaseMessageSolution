@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server www/js/tiger-1.0.0.js",
+        "start": "webpack-dev-server",
         "build:ts": "webpack -p",
         "build:android": "cordova prepare android && cordova build android --release",
         "build:ios": "cordova prepare ios && cordova build ios",
