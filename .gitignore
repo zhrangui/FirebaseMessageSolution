@@ -31,5 +31,7 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 node_modules/
-.ide/
+**/.idea
+**/build/
+
 

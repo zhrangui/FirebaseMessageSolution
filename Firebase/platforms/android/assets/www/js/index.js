@@ -26,8 +26,18 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         this.receivedEvent('deviceready');
+        if (window.FirebasePlugin) {
+            window.FirebasePlugin.getToken((token) => {
+                // save this server-side and use it to push notifications to this device
+                console.log(token);
+            }, function (error) {
+                console.error(error);
+            });
+        } else {
+            console.log('missing window.FirebasePlugin');
+        }
     },
 
     // Update DOM on a Received Event
