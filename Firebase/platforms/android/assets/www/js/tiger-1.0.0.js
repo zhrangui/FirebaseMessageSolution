@@ -83,18 +83,28 @@ new notification_1.default();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Notification = (function () {
     function Notification() {
-        if (window.FirebasePlugin) {
-            window.FirebasePlugin.getToken(function (token) {
-                // save this server-side and use it to push notifications to this device
-                console.log(token);
-            }, function (error) {
-                console.error(error);
-            });
-        }
-        else {
-            console.log('missing window.FirebasePlugin');
-        }
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     }
+    Notification.prototype.onDeviceReady = function () {
+        window.FirebasePlugin.getToken(function (token) {
+            // save this server-side and use it to push notifications to this device
+            console.log(token);
+        }, function (error) {
+            console.error(error);
+        });
+        window.FirebasePlugin.onTokenRefresh(function (token) {
+            // save this server-side and use it to push notifications to this device
+            console.log(token);
+        }, function (error) {
+            console.error(error);
+        });
+        window.FirebasePlugin.subscribe('rps');
+        window.FirebasePlugin.onNotificationOpen(function (notification) {
+            console.log(notification);
+        }, function (error) {
+            console.error(error);
+        });
+    };
     return Notification;
 }());
 exports.default = Notification;
