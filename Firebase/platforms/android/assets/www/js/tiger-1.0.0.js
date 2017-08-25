@@ -98,9 +98,15 @@ var Notification = (function () {
         }, function (error) {
             console.error(error);
         });
-        window.FirebasePlugin.subscribe('rps');
+        window.FirebasePlugin.hasPermission(function (data) {
+            if (!data.isEnabled) {
+                window.FirebasePlugin.grantPermission();
+            }
+        });
+        window.FirebasePlugin.subscribe('TD');
         window.FirebasePlugin.onNotificationOpen(function (notification) {
-            console.log(notification);
+            var notificationbtn = document.querySelector('#notification-button');
+            notificationbtn.textContent = JSON.stringify(notification);
         }, function (error) {
             console.error(error);
         });

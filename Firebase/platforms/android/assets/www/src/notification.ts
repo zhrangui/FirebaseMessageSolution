@@ -12,20 +12,27 @@ export default class Notification {
     window.FirebasePlugin.getToken((token: string) => {
       // save this server-side and use it to push notifications to this device
       console.log(token);
-    }, function (error) {
+    }, (error) => {
       console.error(error);
     });
 
     window.FirebasePlugin.onTokenRefresh((token: string) => {
       // save this server-side and use it to push notifications to this device
       console.log(token);
-    }, function (error) {
+    }, (error) => {
       console.error(error);
     });
-    window.FirebasePlugin.subscribe('rps');
-    window.FirebasePlugin.onNotificationOpen((notification) =>  {
-      console.log(notification);
-    }, function (error) {
+    window.FirebasePlugin.hasPermission((data) => {
+      if (!data.isEnabled) {
+        window.FirebasePlugin.grantPermission();
+      }
+    });
+
+    window.FirebasePlugin.subscribe('TD');
+    window.FirebasePlugin.onNotificationOpen((notification) => {
+      const notificationbtn = document.querySelector('#notification-button') as HTMLButtonElement;
+      notificationbtn.textContent = JSON.stringify(notification);
+    }, (error) => {
       console.error(error);
     });
   }
