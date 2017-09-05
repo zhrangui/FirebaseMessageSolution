@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>476358485413-e5a3kpj9el89alulgdos0h19ug04nios.apps.googleusercontent.com</string>
+	<string>476358485413-jra2quru0dhprg1lo84jtebod27t8e9v.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.476358485413-e5a3kpj9el89alulgdos0h19ug04nios</string>
+	<string>com.googleusercontent.apps.476358485413-jra2quru0dhprg1lo84jtebod27t8e9v</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCZUoI15JbATohpRd3PozsfQjsG-VQNXVc</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.brookfieldrps.test-notification</string>
+	<string>com.rpsrealsolutions.testnotification</string>
 	<key>PROJECT_ID</key>
 	<string>brps-forms-dev</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:476358485413:ios:8dc3ffe1ccb6eeb2</string>
+	<string>1:476358485413:ios:d4e108720f1d9962</string>
 	<key>DATABASE_URL</key>
 	<string>https://brps-forms-dev.firebaseio.com</string>
 </dict>

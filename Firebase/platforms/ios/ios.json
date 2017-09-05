@@ -39,10 +39,10 @@
     },
     "installed_plugins": {
         "cordova-plugin-firebase": {
-            "PACKAGE_NAME": "com.brookfieldrps.test-notification"
+            "PACKAGE_NAME": "com.rpsrealsolutions.testnotification"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.brookfieldrps.test-notification"
+            "PACKAGE_NAME": "com.rpsrealsolutions.testnotification"
         }
     },
     "dependent_plugins": {},
