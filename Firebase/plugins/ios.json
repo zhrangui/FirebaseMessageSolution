@@ -8,10 +8,10 @@
     },
     "installed_plugins": {
         "cordova-plugin-firebase": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "com.brookfieldrps.test-notification"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "com.brookfieldrps.test-notification"
         }
     },
     "dependent_plugins": {}
