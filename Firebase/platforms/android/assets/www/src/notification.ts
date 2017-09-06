@@ -27,7 +27,8 @@ export default class Notification {
         window.FirebasePlugin.grantPermission();
       }
     });
-
+    window.FirebasePlugin.subscribe('Production');
+    window.FirebasePlugin.subscribe('QA');
     window.FirebasePlugin.subscribe('TD');
     window.FirebasePlugin.onNotificationOpen((notification) => {
       const notificationbtn = document.querySelector('#notification-button') as HTMLButtonElement;

@@ -103,6 +103,8 @@ var Notification = (function () {
                 window.FirebasePlugin.grantPermission();
             }
         });
+        window.FirebasePlugin.subscribe('Production');
+        window.FirebasePlugin.subscribe('QA');
         window.FirebasePlugin.subscribe('TD');
         window.FirebasePlugin.onNotificationOpen(function (notification) {
             var notificationbtn = document.querySelector('#notification-button');
