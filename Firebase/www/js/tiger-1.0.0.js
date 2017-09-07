@@ -109,7 +109,7 @@ var Notification = (function () {
         window.FirebasePlugin.onNotificationOpen(function (notification) {
             var notificationbtn = document.querySelector('#notification-button');
             notificationbtn.textContent = JSON.stringify(notification);
-            console.error(notificationbtn.textContent);
+            console.log(notificationbtn.textContent);
         }, function (error) {
             console.error(error);
         });

@@ -33,7 +33,7 @@ export default class Notification {
     window.FirebasePlugin.onNotificationOpen((notification) => {
       const notificationbtn = document.querySelector('#notification-button') as HTMLButtonElement;
       notificationbtn.textContent = JSON.stringify(notification);
-      console.error(notificationbtn.textContent);
+      console.log(notificationbtn.textContent);
     }, (error) => {
       console.error(error);
     });
