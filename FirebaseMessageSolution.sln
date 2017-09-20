@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMessageServer", "FirebaseMessageServer\FirebaseMessageServer.csproj", "{2C231CF7-6A33-4339-892D-D07BF4F613CE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMessage", "FirebaseMessage\FirebaseMessage.csproj", "{DFBE1AEB-B558-4BDA-89A3-47F5FA0163F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMessageTests", "FirebaseMessageTests\FirebaseMessageTests.csproj", "{0DD8F2B8-2E86-4867-B708-52DEF78FF9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C231CF7-6A33-4339-892D-D07BF4F613CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C231CF7-6A33-4339-892D-D07BF4F613CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C231CF7-6A33-4339-892D-D07BF4F613CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C231CF7-6A33-4339-892D-D07BF4F613CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DFBE1AEB-B558-4BDA-89A3-47F5FA0163F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DFBE1AEB-B558-4BDA-89A3-47F5FA0163F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFBE1AEB-B558-4BDA-89A3-47F5FA0163F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFBE1AEB-B558-4BDA-89A3-47F5FA0163F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD8F2B8-2E86-4867-B708-52DEF78FF9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD8F2B8-2E86-4867-B708-52DEF78FF9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD8F2B8-2E86-4867-B708-52DEF78FF9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD8F2B8-2E86-4867-B708-52DEF78FF9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
